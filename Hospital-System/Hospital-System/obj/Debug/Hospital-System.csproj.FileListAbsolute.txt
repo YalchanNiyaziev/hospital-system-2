@@ -7,3 +7,4 @@ D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\ho
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital-System.csproj.CoreCompileInputs.cache
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital-System.exe
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital-System.pdb
+D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.HomeForm.resources
