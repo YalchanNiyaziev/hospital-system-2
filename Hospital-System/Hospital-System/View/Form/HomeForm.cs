@@ -19,7 +19,10 @@ namespace Hospital_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            SearchMedRecordForm searchMedRecord = new SearchMedRecordForm();
+            searchMedRecord.ShowDialog();
+            this.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
