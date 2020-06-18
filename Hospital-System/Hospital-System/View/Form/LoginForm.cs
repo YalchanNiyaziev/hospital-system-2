@@ -31,7 +31,13 @@ namespace Hospital_System
             this.username = UsernameBox.Text;
             this.password = PasswordBox.Text;
             Console.WriteLine(username + " " + password);
-           
+            if (true)
+            {
+                this.Hide();
+                DoctorHomeForm doctorHome = new DoctorHomeForm();
+                doctorHome.ShowDialog();
+                this.Close();
+            }
         }
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)

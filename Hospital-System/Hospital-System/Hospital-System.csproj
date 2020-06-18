@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="View\Form\RegisterExaminationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form\RegisterExaminationForm.Designer.cs">
+      <DependentUpon>RegisterExaminationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form\DoctorHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form\DoctorHomeForm.Designer.cs">
+      <DependentUpon>DoctorHomeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form\SearchMedRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,11 +89,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Form\DoctorHomeForm.resx">
+      <DependentUpon>DoctorHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Form\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form\RegisterExaminationForm.resx">
+      <DependentUpon>RegisterExaminationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form\SearchMedRecordForm.resx">
       <DependentUpon>SearchMedRecordForm.cs</DependentUpon>
