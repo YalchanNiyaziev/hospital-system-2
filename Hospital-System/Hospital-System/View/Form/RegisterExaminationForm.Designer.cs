@@ -53,6 +53,8 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button5
@@ -126,7 +128,7 @@
             this.label2.ForeColor = System.Drawing.Color.Turquoise;
             this.label2.Location = new System.Drawing.Point(443, 99);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(496, 39);
+            this.label2.Size = new System.Drawing.Size(476, 38);
             this.label2.TabIndex = 19;
             this.label2.Text = "Register Medical Examination";
             // 
@@ -135,7 +137,7 @@
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(307, 146);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(729, 573);
+            this.listView2.Size = new System.Drawing.Size(729, 595);
             this.listView2.TabIndex = 20;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
@@ -202,7 +204,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label7.ForeColor = System.Drawing.Color.Turquoise;
-            this.label7.Location = new System.Drawing.Point(376, 356);
+            this.label7.Location = new System.Drawing.Point(376, 398);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 25);
             this.label7.TabIndex = 26;
@@ -213,7 +215,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.Color.Turquoise;
-            this.label8.Location = new System.Drawing.Point(376, 400);
+            this.label8.Location = new System.Drawing.Point(376, 442);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(97, 50);
             this.label8.TabIndex = 27;
@@ -224,7 +226,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.Color.Turquoise;
-            this.label9.Location = new System.Drawing.Point(376, 487);
+            this.label9.Location = new System.Drawing.Point(376, 529);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(94, 50);
             this.label9.TabIndex = 28;
@@ -236,7 +238,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.Color.Turquoise;
-            this.label10.Location = new System.Drawing.Point(376, 571);
+            this.label10.Location = new System.Drawing.Point(376, 613);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(81, 25);
             this.label10.TabIndex = 29;
@@ -248,7 +250,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(381, 637);
+            this.button3.Location = new System.Drawing.Point(381, 663);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(266, 59);
             this.button3.TabIndex = 30;
@@ -271,7 +273,7 @@
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.Turquoise;
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Turquoise;
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(509, 356);
+            this.dateTimePicker1.Location = new System.Drawing.Point(509, 398);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(400, 34);
             this.dateTimePicker1.TabIndex = 34;
@@ -301,7 +303,7 @@
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox4.Location = new System.Drawing.Point(509, 400);
+            this.textBox4.Location = new System.Drawing.Point(509, 442);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(400, 74);
@@ -311,7 +313,7 @@
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox5.Location = new System.Drawing.Point(509, 487);
+            this.textBox5.Location = new System.Drawing.Point(509, 529);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(400, 74);
@@ -321,7 +323,7 @@
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox6.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox6.Location = new System.Drawing.Point(509, 571);
+            this.textBox6.Location = new System.Drawing.Point(509, 613);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(400, 36);
@@ -332,12 +334,33 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.ForeColor = System.Drawing.Color.Turquoise;
-            this.button4.Location = new System.Drawing.Point(700, 637);
+            this.button4.Location = new System.Drawing.Point(700, 663);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(266, 59);
             this.button4.TabIndex = 40;
             this.button4.Text = "Cancel";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox8.ForeColor = System.Drawing.Color.Turquoise;
+            this.textBox8.Location = new System.Drawing.Point(509, 352);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(400, 36);
+            this.textBox8.TabIndex = 100;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.ForeColor = System.Drawing.Color.Turquoise;
+            this.label11.Location = new System.Drawing.Point(376, 352);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(94, 25);
+            this.label11.TabIndex = 99;
+            this.label11.Text = "Number:";
             // 
             // RegisterExaminationForm
             // 
@@ -345,6 +368,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1332, 753);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -407,5 +432,7 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label11;
     }
 }
