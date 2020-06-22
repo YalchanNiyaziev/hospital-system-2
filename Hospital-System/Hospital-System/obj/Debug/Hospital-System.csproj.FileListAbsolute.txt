@@ -22,3 +22,4 @@ D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\ho
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\bin\Debug\EntityFramework.xml
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\bin\Debug\EntityFramework.SqlServer.xml
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital-System.csproj.CopyComplete
+D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.ListDoctorForm.resources

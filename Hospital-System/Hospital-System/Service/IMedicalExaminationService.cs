@@ -7,9 +7,8 @@ using Hospital_System.View.Model;
 
 namespace Hospital_System.Service
 {
-    interface IDoctorService
+    interface IMedicalExaminationService
     {
-        void Save(RegisterDoctorModel doctorModel);
-        List<SampleDoctorModel> GetAllDoctorsAsSampleDoctorModels();
+        void Save(RegisterMedicalExaminationModel model);
     }
 }

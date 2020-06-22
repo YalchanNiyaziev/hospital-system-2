@@ -10,12 +10,15 @@ using System.Windows.Forms;
 using Hospital_System.Service;
 using Hospital_System.Service.Implementation;
 using Hospital_System.View.Model;
+using Hospital_System.View.Util;
 
 namespace Hospital_System
 {
     public partial class RegisterMedicalStaffForm : Form
     {
+        private readonly string ControlIdentifier = "Box";
         private IDoctorService doctorService;
+        private List<Control> controls = new List<Control>();
         public RegisterMedicalStaffForm()
         {
 
@@ -25,7 +28,8 @@ namespace Hospital_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!HasEmptyFields())
+            FindControls(this,controls,ControlIdentifier);
+            if (!FieldValidator.HasEmptyFields(controls.ToArray()))
             {
                 if (PasswordBox.Text.Equals(ConfirmPasswordBox.Text))
                 {
@@ -58,27 +62,7 @@ namespace Hospital_System
             this.Close();
         }
 
-        private bool HasEmptyFields()
-        {
-            bool hasEmpty = false;
-            if (string.IsNullOrEmpty(NameTextBox.Text)
-                || string.IsNullOrEmpty(UcnTextBox.Text)
-                || string.IsNullOrWhiteSpace(CityComboBox.Text)
-                || string.IsNullOrEmpty(StreetTextBox.Text)
-                || string.IsNullOrEmpty(StreetNumberTextBox.Text)
-                || string.IsNullOrEmpty(WardComboBox.Text)
-                || string.IsNullOrEmpty(SpecializationComboBox.Text)
-                || string.IsNullOrEmpty(RoleComboBox.Text)
-                || string.IsNullOrEmpty(UsernameTextBox.Text)
-                || string.IsNullOrEmpty(PasswordBox.Text)
-                || string.IsNullOrEmpty(ConfirmPasswordBox.Text)
-                || string.IsNullOrEmpty(PhoneTextBox.Text))
-            {
-                hasEmpty = true;
-            }
-
-            return hasEmpty;
-        }
+        
 
         private RegisterDoctorModel CreateModel()
         {
@@ -97,6 +81,19 @@ namespace Hospital_System
             return model;
         }
 
+        private void FindControls(Control owner,List<Control> controlList, string name)
+        {
+            foreach (Control c in owner.Controls)
+            {
+                if (c.Name.Contains(name))
+                {
+                    controlList.Add(c);
+                }
+                if (c.HasChildren) FindControls(c, controlList, name);
+            }
+
+
+        }
       
     }
 }
