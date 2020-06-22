@@ -56,6 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Service\IMedicalServiceSevice.cs" />
+    <Compile Include="Service\Implementation\MedicalServiceService.cs" />
+    <Compile Include="View\Form\ListPatientMedicalServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form\ListPatientMedicalServicesForm.Designer.cs">
+      <DependentUpon>ListPatientMedicalServicesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Service\IMedicalExaminationRequestService.cs" />
     <Compile Include="Service\Implementation\MedicalExaminationRequestService.cs" />
     <Compile Include="View\Form\ListDoctorForm.cs">
@@ -132,6 +140,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\Model\LoginModel.cs" />
+    <Compile Include="View\Model\PatientMedicalServiceModel.cs" />
     <Compile Include="View\Model\RegisterDoctorModel.cs" />
     <Compile Include="View\Model\RegisterMedicalExaminationModel.cs" />
     <Compile Include="View\Model\RequestMedicalExaminationModel.cs" />
@@ -151,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form\ListMedicalExaminationForm.resx">
       <DependentUpon>ListMedicalExaminationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form\ListPatientMedicalServicesForm.resx">
+      <DependentUpon>ListPatientMedicalServicesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form\MakeExaminationRequestForm.resx">
       <DependentUpon>MakeExaminationRequestForm.cs</DependentUpon>

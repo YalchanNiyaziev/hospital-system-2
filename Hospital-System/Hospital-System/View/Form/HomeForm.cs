@@ -42,7 +42,10 @@ namespace Hospital_System
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ListDoctorForm listDoctorForm = new ListDoctorForm();
+            listDoctorForm.ShowDialog();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)

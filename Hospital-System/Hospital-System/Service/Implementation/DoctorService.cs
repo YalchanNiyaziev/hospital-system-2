@@ -41,6 +41,134 @@ namespace Hospital_System.Service.Implementation
                 Specialization = "Surgery",
                 Id = 111
             });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Medicine",
+                Specialization = "Surgery",
+                Id = 88
+            }); sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "0656545",
+                Ward = "Dental Meddssssssssssssssssssssssssxxicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belchev",
+                Phone = "05",
+                Ward = "Dedicine",
+                Specialization = "Surgery",
+                Id = 88
+            });
+            sampleDoctorModels.Add(new SampleDoctorModel
+            {
+                Name = "Ivan Belcddddddddddddddddddddddddddddddddhev",
+                Phone = "0656fffffffffffffff545",
+                Ward = "Dental Medicfffffffffffffine",
+                Specialization = "Surgefffffffffffry",
+                Id = 88
+            });
+
             return sampleDoctorModels;
 
         }

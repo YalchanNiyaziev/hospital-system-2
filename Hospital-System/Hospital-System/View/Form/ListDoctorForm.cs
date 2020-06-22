@@ -31,15 +31,24 @@ namespace Hospital_System
 
         private void ListDoctorForm_Load(object sender, EventArgs e)
         {
-             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif ", 13);
-             // dataGridView1.RowHeadersWidth = 120;
-            
+          
             dataGridView1.DataSource = doctors;
             dataGridView1.Columns["Id"].Visible = false;
-            foreach (DataGridViewColumn c in dataGridView1.Columns)
+            dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Microsoft Sans Serif ", 13);
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor=Color.Turquoise;
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dataGridView1.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.Turquoise;
+            dataGridView1.EnableHeadersVisualStyles = false;
+
+        
+            foreach (DataGridViewRow c in dataGridView1.Rows)
             {
                 c.DefaultCellStyle.Font = new Font("Microsoft Sans Serif ", 12);
+                c.DefaultCellStyle.ForeColor=Color.Turquoise;
+                c.DefaultCellStyle.SelectionBackColor=Color.Turquoise;
+                c.DefaultCellStyle.SelectionForeColor = Color.White;
             }
+           
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
