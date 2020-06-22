@@ -32,34 +32,34 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Cancel = new System.Windows.Forms.Button();
+            this.Confirm = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CityComboBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
+            this.UcnTextBox = new System.Windows.Forms.TextBox();
+            this.StreetTextBox = new System.Windows.Forms.TextBox();
+            this.PhoneTextBox = new System.Windows.Forms.TextBox();
+            this.WardComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.SpecializationComboBox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.RoleComboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.UsernameTextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.PasswordBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.ConfirmPasswordBox = new System.Windows.Forms.TextBox();
+            this.StreetNumberTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button5
@@ -112,149 +112,32 @@
             this.listView1.TabIndex = 19;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // button4
+            // Cancel
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.Color.Turquoise;
-            this.button4.Location = new System.Drawing.Point(693, 730);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(256, 44);
-            this.button4.TabIndex = 60;
-            this.button4.Text = "Cancel";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Cancel.ForeColor = System.Drawing.Color.Turquoise;
+            this.Cancel.Location = new System.Drawing.Point(693, 730);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(256, 44);
+            this.Cancel.TabIndex = 60;
+            this.Cancel.Text = "Cancel";
+            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox6
+            // Confirm
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox6.Location = new System.Drawing.Point(504, 680);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(400, 36);
-            this.textBox6.TabIndex = 59;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox3.Location = new System.Drawing.Point(504, 302);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(400, 36);
-            this.textBox3.TabIndex = 56;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox2.Location = new System.Drawing.Point(504, 208);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(400, 36);
-            this.textBox2.TabIndex = 55;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox1.Location = new System.Drawing.Point(504, 162);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(400, 36);
-            this.textBox1.TabIndex = 53;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Turquoise;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(376, 730);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(275, 44);
-            this.button3.TabIndex = 52;
-            this.button3.Text = "Confirm";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.ForeColor = System.Drawing.Color.Turquoise;
-            this.label10.Location = new System.Drawing.Point(371, 691);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 25);
-            this.label10.TabIndex = 51;
-            this.label10.Text = "Phone:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.Color.Turquoise;
-            this.label7.Location = new System.Drawing.Point(371, 395);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 25);
-            this.label7.TabIndex = 48;
-            this.label7.Text = "Ward:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.Turquoise;
-            this.label6.Location = new System.Drawing.Point(371, 302);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 25);
-            this.label6.TabIndex = 47;
-            this.label6.Text = "Street:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.Turquoise;
-            this.label5.Location = new System.Drawing.Point(371, 255);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 25);
-            this.label5.TabIndex = 46;
-            this.label5.Text = "Address:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownHeight = 36;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Turquoise;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.IntegralHeight = false;
-            this.comboBox1.Location = new System.Drawing.Point(504, 255);
-            this.comboBox1.MinimumSize = new System.Drawing.Size(400, 0);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(400, 37);
-            this.comboBox1.TabIndex = 45;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.Turquoise;
-            this.label4.Location = new System.Drawing.Point(371, 208);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 25);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "EGN:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.Turquoise;
-            this.label3.Location = new System.Drawing.Point(371, 162);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 25);
-            this.label3.TabIndex = 43;
-            this.label3.Text = "Name:";
+            this.Confirm.BackColor = System.Drawing.Color.Turquoise;
+            this.Confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Confirm.ForeColor = System.Drawing.Color.White;
+            this.Confirm.Location = new System.Drawing.Point(376, 730);
+            this.Confirm.Name = "Confirm";
+            this.Confirm.Size = new System.Drawing.Size(275, 44);
+            this.Confirm.TabIndex = 52;
+            this.Confirm.Text = "Confirm";
+            this.Confirm.UseVisualStyleBackColor = false;
+            this.Confirm.Click += new System.EventHandler(this.button3_Click);
             // 
             // listView2
             // 
@@ -276,18 +159,137 @@
             this.label2.TabIndex = 41;
             this.label2.Text = "Register Medical Staff";
             // 
-            // comboBox2
+            // label3
             // 
-            this.comboBox2.DropDownHeight = 36;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox2.ForeColor = System.Drawing.Color.Turquoise;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.IntegralHeight = false;
-            this.comboBox2.Location = new System.Drawing.Point(504, 395);
-            this.comboBox2.MinimumSize = new System.Drawing.Size(400, 0);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(400, 37);
-            this.comboBox2.TabIndex = 61;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.Turquoise;
+            this.label3.Location = new System.Drawing.Point(371, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 25);
+            this.label3.TabIndex = 43;
+            this.label3.Text = "Name:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.Turquoise;
+            this.label4.Location = new System.Drawing.Point(371, 208);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 25);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "EGN:";
+            // 
+            // CityComboBox
+            // 
+            this.CityComboBox.DropDownHeight = 36;
+            this.CityComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CityComboBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.CityComboBox.FormattingEnabled = true;
+            this.CityComboBox.IntegralHeight = false;
+            this.CityComboBox.Location = new System.Drawing.Point(504, 255);
+            this.CityComboBox.MinimumSize = new System.Drawing.Size(400, 0);
+            this.CityComboBox.Name = "CityComboBox";
+            this.CityComboBox.Size = new System.Drawing.Size(400, 37);
+            this.CityComboBox.TabIndex = 45;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.Turquoise;
+            this.label5.Location = new System.Drawing.Point(371, 255);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 25);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "City:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.Turquoise;
+            this.label6.Location = new System.Drawing.Point(371, 302);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 25);
+            this.label6.TabIndex = 47;
+            this.label6.Text = "Street:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.Color.Turquoise;
+            this.label7.Location = new System.Drawing.Point(371, 395);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 25);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "Ward:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.ForeColor = System.Drawing.Color.Turquoise;
+            this.label10.Location = new System.Drawing.Point(371, 691);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(81, 25);
+            this.label10.TabIndex = 51;
+            this.label10.Text = "Phone:";
+            // 
+            // NameTextBox
+            // 
+            this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameTextBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.NameTextBox.Location = new System.Drawing.Point(504, 162);
+            this.NameTextBox.Multiline = true;
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(400, 36);
+            this.NameTextBox.TabIndex = 53;
+            // 
+            // UcnTextBox
+            // 
+            this.UcnTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UcnTextBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.UcnTextBox.Location = new System.Drawing.Point(504, 208);
+            this.UcnTextBox.Multiline = true;
+            this.UcnTextBox.Name = "UcnTextBox";
+            this.UcnTextBox.Size = new System.Drawing.Size(400, 36);
+            this.UcnTextBox.TabIndex = 55;
+            // 
+            // StreetTextBox
+            // 
+            this.StreetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StreetTextBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.StreetTextBox.Location = new System.Drawing.Point(504, 302);
+            this.StreetTextBox.Multiline = true;
+            this.StreetTextBox.Name = "StreetTextBox";
+            this.StreetTextBox.Size = new System.Drawing.Size(400, 36);
+            this.StreetTextBox.TabIndex = 56;
+            // 
+            // PhoneTextBox
+            // 
+            this.PhoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PhoneTextBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.PhoneTextBox.Location = new System.Drawing.Point(504, 680);
+            this.PhoneTextBox.Multiline = true;
+            this.PhoneTextBox.Name = "PhoneTextBox";
+            this.PhoneTextBox.Size = new System.Drawing.Size(400, 36);
+            this.PhoneTextBox.TabIndex = 59;
+            // 
+            // WardComboBox
+            // 
+            this.WardComboBox.DropDownHeight = 36;
+            this.WardComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WardComboBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.WardComboBox.FormattingEnabled = true;
+            this.WardComboBox.IntegralHeight = false;
+            this.WardComboBox.Location = new System.Drawing.Point(504, 395);
+            this.WardComboBox.MinimumSize = new System.Drawing.Size(400, 0);
+            this.WardComboBox.Name = "WardComboBox";
+            this.WardComboBox.Size = new System.Drawing.Size(400, 37);
+            this.WardComboBox.TabIndex = 61;
             // 
             // label8
             // 
@@ -300,18 +302,18 @@
             this.label8.TabIndex = 62;
             this.label8.Text = "Spec:";
             // 
-            // comboBox3
+            // SpecializationComboBox
             // 
-            this.comboBox3.DropDownHeight = 36;
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox3.ForeColor = System.Drawing.Color.Turquoise;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.IntegralHeight = false;
-            this.comboBox3.Location = new System.Drawing.Point(504, 443);
-            this.comboBox3.MinimumSize = new System.Drawing.Size(400, 0);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(400, 37);
-            this.comboBox3.TabIndex = 63;
+            this.SpecializationComboBox.DropDownHeight = 36;
+            this.SpecializationComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.SpecializationComboBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.SpecializationComboBox.FormattingEnabled = true;
+            this.SpecializationComboBox.IntegralHeight = false;
+            this.SpecializationComboBox.Location = new System.Drawing.Point(504, 443);
+            this.SpecializationComboBox.MinimumSize = new System.Drawing.Size(400, 0);
+            this.SpecializationComboBox.Name = "SpecializationComboBox";
+            this.SpecializationComboBox.Size = new System.Drawing.Size(400, 37);
+            this.SpecializationComboBox.TabIndex = 63;
             // 
             // label9
             // 
@@ -324,18 +326,18 @@
             this.label9.TabIndex = 64;
             this.label9.Text = "Role:";
             // 
-            // comboBox4
+            // RoleComboBox
             // 
-            this.comboBox4.DropDownHeight = 36;
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox4.ForeColor = System.Drawing.Color.Turquoise;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.IntegralHeight = false;
-            this.comboBox4.Location = new System.Drawing.Point(504, 495);
-            this.comboBox4.MinimumSize = new System.Drawing.Size(400, 0);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(400, 37);
-            this.comboBox4.TabIndex = 65;
+            this.RoleComboBox.DropDownHeight = 36;
+            this.RoleComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RoleComboBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.RoleComboBox.FormattingEnabled = true;
+            this.RoleComboBox.IntegralHeight = false;
+            this.RoleComboBox.Location = new System.Drawing.Point(504, 495);
+            this.RoleComboBox.MinimumSize = new System.Drawing.Size(400, 0);
+            this.RoleComboBox.Name = "RoleComboBox";
+            this.RoleComboBox.Size = new System.Drawing.Size(400, 37);
+            this.RoleComboBox.TabIndex = 65;
             // 
             // label11
             // 
@@ -355,19 +357,19 @@
             this.label12.ForeColor = System.Drawing.Color.Turquoise;
             this.label12.Location = new System.Drawing.Point(370, 549);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 25);
+            this.label12.Size = new System.Drawing.Size(117, 25);
             this.label12.TabIndex = 68;
-            this.label12.Text = "Email:";
+            this.label12.Text = "Username:";
             // 
-            // textBox4
+            // UsernameTextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox4.Location = new System.Drawing.Point(504, 543);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(400, 36);
-            this.textBox4.TabIndex = 69;
+            this.UsernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsernameTextBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.UsernameTextBox.Location = new System.Drawing.Point(504, 543);
+            this.UsernameTextBox.Multiline = true;
+            this.UsernameTextBox.Name = "UsernameTextBox";
+            this.UsernameTextBox.Size = new System.Drawing.Size(400, 36);
+            this.UsernameTextBox.TabIndex = 69;
             // 
             // label13
             // 
@@ -380,16 +382,16 @@
             this.label13.TabIndex = 70;
             this.label13.Text = "Password:";
             // 
-            // textBox5
+            // PasswordBox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox5.Location = new System.Drawing.Point(504, 591);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.PasswordChar = '*';
-            this.textBox5.Size = new System.Drawing.Size(400, 36);
-            this.textBox5.TabIndex = 71;
+            this.PasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.PasswordBox.Location = new System.Drawing.Point(504, 591);
+            this.PasswordBox.Multiline = true;
+            this.PasswordBox.Name = "PasswordBox";
+            this.PasswordBox.PasswordChar = '*';
+            this.PasswordBox.Size = new System.Drawing.Size(400, 36);
+            this.PasswordBox.TabIndex = 71;
             // 
             // label14
             // 
@@ -402,26 +404,26 @@
             this.label14.TabIndex = 72;
             this.label14.Text = "Confirm\r\nPassword:";
             // 
-            // textBox7
+            // ConfirmPasswordBox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox7.Location = new System.Drawing.Point(504, 638);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.PasswordChar = '*';
-            this.textBox7.Size = new System.Drawing.Size(400, 36);
-            this.textBox7.TabIndex = 73;
+            this.ConfirmPasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ConfirmPasswordBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.ConfirmPasswordBox.Location = new System.Drawing.Point(504, 638);
+            this.ConfirmPasswordBox.Multiline = true;
+            this.ConfirmPasswordBox.Name = "ConfirmPasswordBox";
+            this.ConfirmPasswordBox.PasswordChar = '*';
+            this.ConfirmPasswordBox.Size = new System.Drawing.Size(400, 36);
+            this.ConfirmPasswordBox.TabIndex = 73;
             // 
-            // textBox8
+            // StreetNumberTextBox
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox8.Location = new System.Drawing.Point(504, 348);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(400, 36);
-            this.textBox8.TabIndex = 74;
+            this.StreetNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StreetNumberTextBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.StreetNumberTextBox.Location = new System.Drawing.Point(504, 348);
+            this.StreetNumberTextBox.Multiline = true;
+            this.StreetNumberTextBox.Name = "StreetNumberTextBox";
+            this.StreetNumberTextBox.Size = new System.Drawing.Size(400, 36);
+            this.StreetNumberTextBox.TabIndex = 74;
             // 
             // RegisterMedicalStaffForm
             // 
@@ -429,30 +431,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1332, 803);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.StreetNumberTextBox);
+            this.Controls.Add(this.ConfirmPasswordBox);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.UsernameTextBox);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.RoleComboBox);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.SpecializationComboBox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.WardComboBox);
+            this.Controls.Add(this.Cancel);
+            this.Controls.Add(this.PhoneTextBox);
+            this.Controls.Add(this.StreetTextBox);
+            this.Controls.Add(this.UcnTextBox);
+            this.Controls.Add(this.NameTextBox);
+            this.Controls.Add(this.Confirm);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CityComboBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listView2);
@@ -477,33 +479,33 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Button Confirm;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox CityComboBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox NameTextBox;
+        private System.Windows.Forms.TextBox UcnTextBox;
+        private System.Windows.Forms.TextBox StreetTextBox;
+        private System.Windows.Forms.TextBox PhoneTextBox;
+        private System.Windows.Forms.ComboBox WardComboBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox SpecializationComboBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox RoleComboBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox UsernameTextBox;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox ConfirmPasswordBox;
+        private System.Windows.Forms.TextBox StreetNumberTextBox;
     }
 }
