@@ -12,8 +12,10 @@ namespace Hospital_System
 {
     public partial class DoctorHomeForm : Form
     {
-        public DoctorHomeForm()
+        private int doctorId;
+        public DoctorHomeForm(string doctorId)
         {
+            this.doctorId = int.Parse(doctorId);
             InitializeComponent();
         }
 
@@ -27,9 +29,16 @@ namespace Hospital_System
             this.Hide();
             RegisterExaminationForm registerExamination = new RegisterExaminationForm();
             registerExamination.ShowDialog();
-
             this.Close();
             
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListDoctorExaminationRequestForm doctorExaminationRequestForm = new ListDoctorExaminationRequestForm(this.doctorId);
+            doctorExaminationRequestForm.ShowDialog();
+            this.Close();
         }
     }
 }

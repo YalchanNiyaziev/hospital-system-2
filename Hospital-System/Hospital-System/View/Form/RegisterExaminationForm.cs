@@ -49,10 +49,10 @@ namespace Hospital_System
                     RegisterMedicalExaminationModel medicalExaminationModel = CreateModel();
                     medicalExaminationService.Save(medicalExaminationModel);
                     MessageBox.Show("Successfully recorded medical examination");
-                    this.Hide();
-                    DoctorHomeForm doctorHome = new DoctorHomeForm();
-                    doctorHome.ShowDialog();
-                    this.Close();
+                    // this.Hide();
+                    // DoctorHomeForm doctorHome = new DoctorHomeForm();
+                    // doctorHome.ShowDialog();
+                    // this.Close();
 
 
             }
@@ -84,10 +84,10 @@ namespace Hospital_System
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            DoctorHomeForm doctorHome = new DoctorHomeForm();
-            doctorHome.ShowDialog();
-            this.Close();
+            // this.Hide();
+            // DoctorHomeForm doctorHome = new DoctorHomeForm();
+            // doctorHome.ShowDialog();
+            // this.Close();
         }
     }
 }

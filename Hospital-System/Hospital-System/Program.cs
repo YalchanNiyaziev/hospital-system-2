@@ -16,7 +16,7 @@ namespace Hospital_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListPatientMedicalServicesForm("454"));
+            Application.Run(new DoctorHomeForm("45"));
         }
     }
 }

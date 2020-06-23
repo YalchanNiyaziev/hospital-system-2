@@ -10,5 +10,7 @@ namespace Hospital_System.Service
     interface IMedicalExaminationRequestService
     {
         void Save(RequestMedicalExaminationModel model);
+        List<SampleExaminationRequestModel> GetAllPendingRequestByDoctor(int doctorId);
+        ExaminationRequestDetailsModel GetMedicalExaminationRequestById(int id);
     }
 }
