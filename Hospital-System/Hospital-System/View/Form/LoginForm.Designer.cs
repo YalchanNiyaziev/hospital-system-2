@@ -36,9 +36,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.UsernameBox = new System.Windows.Forms.TextBox();
+            this.UsernameBox_Required = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.PasswordBox = new System.Windows.Forms.TextBox();
+            this.PasswordBox_Required = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -146,18 +146,18 @@
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.SelectedIndexChanged += new System.EventHandler(this.listView2_SelectedIndexChanged);
             // 
-            // UsernameBox
+            // UsernameBox_Required
             // 
-            this.UsernameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UsernameBox.ForeColor = System.Drawing.Color.Turquoise;
-            this.UsernameBox.Location = new System.Drawing.Point(512, 215);
-            this.UsernameBox.MaximumSize = new System.Drawing.Size(0, 50);
-            this.UsernameBox.MinimumSize = new System.Drawing.Size(511, 50);
-            this.UsernameBox.Multiline = true;
-            this.UsernameBox.Name = "UsernameBox";
-            this.UsernameBox.Size = new System.Drawing.Size(511, 50);
-            this.UsernameBox.TabIndex = 17;
-            this.UsernameBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.UsernameBox_Required.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UsernameBox_Required.ForeColor = System.Drawing.Color.Turquoise;
+            this.UsernameBox_Required.Location = new System.Drawing.Point(512, 215);
+            this.UsernameBox_Required.MaximumSize = new System.Drawing.Size(4, 50);
+            this.UsernameBox_Required.MinimumSize = new System.Drawing.Size(511, 50);
+            this.UsernameBox_Required.Multiline = true;
+            this.UsernameBox_Required.Name = "UsernameBox_Required";
+            this.UsernameBox_Required.Size = new System.Drawing.Size(511, 50);
+            this.UsernameBox_Required.TabIndex = 17;
+            this.UsernameBox_Required.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -170,18 +170,18 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Username:";
             // 
-            // PasswordBox
+            // PasswordBox_Required
             // 
-            this.PasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordBox.ForeColor = System.Drawing.Color.Turquoise;
-            this.PasswordBox.Location = new System.Drawing.Point(512, 315);
-            this.PasswordBox.MaximumSize = new System.Drawing.Size(0, 50);
-            this.PasswordBox.MinimumSize = new System.Drawing.Size(511, 50);
-            this.PasswordBox.Multiline = true;
-            this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.PasswordChar = '*';
-            this.PasswordBox.Size = new System.Drawing.Size(511, 50);
-            this.PasswordBox.TabIndex = 17;
+            this.PasswordBox_Required.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PasswordBox_Required.ForeColor = System.Drawing.Color.Turquoise;
+            this.PasswordBox_Required.Location = new System.Drawing.Point(512, 315);
+            this.PasswordBox_Required.MaximumSize = new System.Drawing.Size(4, 50);
+            this.PasswordBox_Required.MinimumSize = new System.Drawing.Size(511, 50);
+            this.PasswordBox_Required.Multiline = true;
+            this.PasswordBox_Required.Name = "PasswordBox_Required";
+            this.PasswordBox_Required.PasswordChar = '*';
+            this.PasswordBox_Required.Size = new System.Drawing.Size(511, 50);
+            this.PasswordBox_Required.TabIndex = 17;
             // 
             // label3
             // 
@@ -216,9 +216,9 @@
             this.ClientSize = new System.Drawing.Size(1332, 653);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.PasswordBox);
+            this.Controls.Add(this.PasswordBox_Required);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.UsernameBox);
+            this.Controls.Add(this.UsernameBox_Required);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -246,9 +246,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.TextBox UsernameBox;
+        private System.Windows.Forms.TextBox UsernameBox_Required;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox PasswordBox;
+        private System.Windows.Forms.TextBox PasswordBox_Required;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button6;
     }

@@ -56,6 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Service\Implementation\UserService.cs" />
+    <Compile Include="Service\IUserService.cs" />
     <Compile Include="View\Form\ShowExaminationRequestDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,7 +138,6 @@
     <Compile Include="View\Form\SearchMedRecordForm.Designer.cs">
       <DependentUpon>SearchMedRecordForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Service\LoginService.cs" />
     <Compile Include="View\Form\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,7 +160,9 @@
     <Compile Include="View\Model\RequestMedicalExaminationModel.cs" />
     <Compile Include="View\Model\SampleDoctorModel.cs" />
     <Compile Include="View\Model\SampleExaminationRequestModel.cs" />
+    <Compile Include="View\Model\UserModel.cs" />
     <Compile Include="View\Util\FieldValidator.cs" />
+    <Compile Include="View\Util\UserRoleNameProvider.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

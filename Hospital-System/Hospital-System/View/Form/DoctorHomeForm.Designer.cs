@@ -37,7 +37,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.DoctorMessageLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button5
@@ -154,16 +154,16 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // label2
+            // DoctorMessageLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.Turquoise;
-            this.label2.Location = new System.Drawing.Point(570, 200);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(572, 46);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "WELCOME DOCTOR + NAME";
+            this.DoctorMessageLabel.AutoSize = true;
+            this.DoctorMessageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DoctorMessageLabel.ForeColor = System.Drawing.Color.Turquoise;
+            this.DoctorMessageLabel.Location = new System.Drawing.Point(570, 200);
+            this.DoctorMessageLabel.Name = "DoctorMessageLabel";
+            this.DoctorMessageLabel.Size = new System.Drawing.Size(422, 46);
+            this.DoctorMessageLabel.TabIndex = 18;
+            this.DoctorMessageLabel.Text = "WELCOME DOCTOR ";
             // 
             // DoctorHomeForm
             // 
@@ -171,7 +171,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1332, 653);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.DoctorMessageLabel);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -203,6 +203,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label DoctorMessageLabel;
     }
 }

@@ -7,21 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hospital_System.View.Model;
 
 namespace Hospital_System
 {
     public partial class DoctorHomeForm : Form
     {
         private int doctorId;
-        public DoctorHomeForm(string doctorId)
+        private UserModel user;
+        public DoctorHomeForm (UserModel userModel)
         {
-            this.doctorId = int.Parse(doctorId);
+            this.user = userModel;
+            this.doctorId = userModel.Id;
             InitializeComponent();
         }
 
         private void DoctorHomeForm_Load(object sender, EventArgs e)
         {
-
+            DoctorMessageLabel.Text += user.Name.ToUpper();
         }
 
         private void button3_Click(object sender, EventArgs e)
