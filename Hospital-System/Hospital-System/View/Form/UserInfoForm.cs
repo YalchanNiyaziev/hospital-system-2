@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Hospital_System
 {
-    public partial class RegisterAdministrativeStaffForm : Form
+    public partial class UserInfoForm : Form
     {
-        public RegisterAdministrativeStaffForm()
+        public UserInfoForm()
         {
             InitializeComponent();
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

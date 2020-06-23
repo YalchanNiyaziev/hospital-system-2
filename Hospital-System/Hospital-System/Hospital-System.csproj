@@ -58,6 +58,12 @@
   <ItemGroup>
     <Compile Include="Service\IMedicalOperationService.cs" />
     <Compile Include="Service\Implementation\MedicalOperationService.cs" />
+    <Compile Include="View\Form\UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form\UserInfoForm.Designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form\RegisterMedicalOperationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,12 +115,6 @@
     </Compile>
     <Compile Include="View\Form\MakeExaminationRequestForm.Designer.cs">
       <DependentUpon>MakeExaminationRequestForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Form\RegisterAdministrativeStaffForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Form\RegisterAdministrativeStaffForm.Designer.cs">
-      <DependentUpon>RegisterAdministrativeStaffForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Form\RegisterMedicalStaffForm.cs">
       <SubType>Form</SubType>
@@ -202,9 +202,6 @@
     <EmbeddedResource Include="View\Form\MakeExaminationRequestForm.resx">
       <DependentUpon>MakeExaminationRequestForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form\RegisterAdministrativeStaffForm.resx">
-      <DependentUpon>RegisterAdministrativeStaffForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\Form\RegisterMedicalStaffForm.resx">
       <DependentUpon>RegisterMedicalStaffForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,6 +223,9 @@
     <EmbeddedResource Include="View\Form\SearchMedRecordForm.resx">
       <DependentUpon>SearchMedRecordForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Form\UserInfoForm.resx">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -241,6 +241,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Data\DbContext\" />
     <Folder Include="Data\Entity\" />
     <Folder Include="Data\Repository\" />
   </ItemGroup>
