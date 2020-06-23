@@ -1,7 +1,6 @@
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\bin\Debug\Hospital-System.exe.config
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\bin\Debug\Hospital-System.exe
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\bin\Debug\Hospital-System.pdb
-D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital-System.csprojAssemblyReference.cache
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.Properties.Resources.resources
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital-System.csproj.GenerateResource.cache
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital-System.csproj.CoreCompileInputs.cache

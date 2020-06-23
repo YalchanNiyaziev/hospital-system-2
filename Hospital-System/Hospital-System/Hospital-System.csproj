@@ -56,6 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DbContext\IHospitalSystemDbContext.cs" />
+    <Compile Include="Data\DbContext\Implementation\HospitalSystemDbContext.cs" />
     <Compile Include="Data\Entity\Address.cs" />
     <Compile Include="Data\Entity\Admin.cs" />
     <Compile Include="Data\Entity\BaseEntity.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="Data\Entity\Patient.cs" />
     <Compile Include="Data\Entity\Person.cs" />
     <Compile Include="Data\Entity\User.cs" />
+    <Compile Include="Data\Migrations\Configuration.cs" />
     <Compile Include="Service\IMedicalOperationService.cs" />
     <Compile Include="Service\Implementation\MedicalOperationService.cs" />
     <Compile Include="View\Form\UserInfoForm.cs">
@@ -256,7 +259,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\DbContext\" />
     <Folder Include="Data\Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
