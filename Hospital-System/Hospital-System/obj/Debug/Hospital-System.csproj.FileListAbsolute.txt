@@ -12,7 +12,6 @@ D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\ho
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.SearchMedRecordForm.resources
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.DoctorHomeForm.resources
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.RegisterExaminationForm.resources
-D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.RegisterAdministrativeStaffForm.resources
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.RegisterMedicalStaffForm.resources
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.AdminHomeForm.resources
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.ListMedicalExaminationForm.resources
@@ -27,3 +26,4 @@ D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\ho
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.ShowExaminationRequestDetailsForm.resources
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.ListDoctorExaminationRequestForm.resources
 D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.RegisterMedicalOperationForm.resources
+D:\ТУ СИТ\Трети курс\2ри семестър\ТСП-проект\hospital-system-2\Hospital-System\Hospital-System\obj\Debug\Hospital_System.UserInfoForm.resources

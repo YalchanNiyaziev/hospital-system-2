@@ -28,10 +28,7 @@ namespace Hospital_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RegisterAdministrativeStaffForm registerAdministrativeStaff = new RegisterAdministrativeStaffForm();
-            registerAdministrativeStaff.ShowDialog();
-            this.Close();
+           
         }
     }
 }

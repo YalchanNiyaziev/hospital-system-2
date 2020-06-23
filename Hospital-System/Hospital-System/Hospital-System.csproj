@@ -56,6 +56,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Entity\Address.cs" />
+    <Compile Include="Data\Entity\Admin.cs" />
+    <Compile Include="Data\Entity\BaseEntity.cs" />
+    <Compile Include="Data\Entity\Doctor.cs" />
+    <Compile Include="Data\Entity\Enums\ExaminationRequestStatusType.cs" />
+    <Compile Include="Data\Entity\Enums\MedicalSpecializationType.cs" />
+    <Compile Include="Data\Entity\Enums\MedicalWardType.cs" />
+    <Compile Include="Data\Entity\Enums\UserRoleType.cs" />
+    <Compile Include="Data\Entity\MedicalExamination.cs" />
+    <Compile Include="Data\Entity\MedicalExaminationRequest.cs" />
+    <Compile Include="Data\Entity\MedicalOperation.cs" />
+    <Compile Include="Data\Entity\MedicalService.cs" />
+    <Compile Include="Data\Entity\Patient.cs" />
+    <Compile Include="Data\Entity\Person.cs" />
+    <Compile Include="Data\Entity\User.cs" />
     <Compile Include="Service\IMedicalOperationService.cs" />
     <Compile Include="Service\Implementation\MedicalOperationService.cs" />
     <Compile Include="View\Form\UserInfoForm.cs">
@@ -242,7 +257,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\DbContext\" />
-    <Folder Include="Data\Entity\" />
     <Folder Include="Data\Repository\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
