@@ -26,7 +26,7 @@ namespace Hospital_System.Service.Implementation
                 //}
                 //else
                 //{
-                // userModel.Role = UserRoleNameProvider.Doctor;
+                userModel.Role = UserRoleNameProvider.Doctor;
                 //}
             // }
 

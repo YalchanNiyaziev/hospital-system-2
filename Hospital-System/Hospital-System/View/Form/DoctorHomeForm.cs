@@ -29,10 +29,9 @@ namespace Hospital_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            RegisterExaminationForm registerExamination = new RegisterExaminationForm();
-            registerExamination.ShowDialog();
-            this.Close();
+            RegisterExaminationForm registerExaminationForm = new RegisterExaminationForm(user.Id);
+            registerExaminationForm.ShowDialog();
+            
             
         }
 
@@ -42,6 +41,12 @@ namespace Hospital_System
             ListDoctorExaminationRequestForm doctorExaminationRequestForm = new ListDoctorExaminationRequestForm(this.doctorId);
             doctorExaminationRequestForm.ShowDialog();
             this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            RegisterMedicalOperationForm registerMedicalOperationForm = new RegisterMedicalOperationForm(user.Id);
+            registerMedicalOperationForm.ShowDialog();
         }
     }
 }

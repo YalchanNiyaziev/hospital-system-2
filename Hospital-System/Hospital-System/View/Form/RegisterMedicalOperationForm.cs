@@ -14,32 +14,18 @@ using Hospital_System.View.Util;
 
 namespace Hospital_System
 {
-    public partial class RegisterExaminationForm : Form
+    public partial class RegisterMedicalOperationForm : Form
     {
         private readonly string ControlIdentifier = "_Required";
-        private List<Control> controls = new List<Control>();
-        private IMedicalExaminationService medicalExaminationService;
+        private List<Control> controls;
+        private IMedicalOperationService medicalOperationService;
         private int doctorId;
-        public RegisterExaminationForm(int doctorId)
+        public RegisterMedicalOperationForm(int doctorId)
         {
+            this.controls = new List<Control>();
             this.doctorId = doctorId;
-            medicalExaminationService = new MedicalExaminationService();
+            this.medicalOperationService = new MedicalOperationService();
             InitializeComponent();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -47,11 +33,11 @@ namespace Hospital_System
             FindControls(this, controls, ControlIdentifier);
             if (!FieldValidator.HasEmptyFields(controls.ToArray()))
             {
-                
-                    RegisterMedicalExaminationModel medicalExaminationModel = CreateModel();
-                    medicalExaminationService.Save(medicalExaminationModel);
-                    MessageBox.Show("Successfully recorded medical examination");
-                    this.Close();
+
+                RegisterMedicalOperationModel medicalOperationModel = CreateModel();
+                medicalOperationService.Save(medicalOperationModel);
+                MessageBox.Show("Successfully recorded medical examination");
+                this.Close();
 
 
             }
@@ -61,9 +47,9 @@ namespace Hospital_System
             }
         }
 
-        private RegisterMedicalExaminationModel CreateModel()
+        private RegisterMedicalOperationModel CreateModel()
         {
-            RegisterMedicalExaminationModel model = new RegisterMedicalExaminationModel
+            RegisterMedicalOperationModel model = new RegisterMedicalOperationModel
             {
                 PatientName = PatientNameTextBox_Required.Text,
                 Ucn = PatientUCNTextBox_Required.Text,
@@ -71,14 +57,13 @@ namespace Hospital_System
                 Street = PatientStreetNumberTextBox_Required.Text,
                 StreetNumber = PatientStreetNumberTextBox_Required.Text,
                 Date = ExaminationDatePicker_Required.Text,
-                Disease = DiseaseTextBox_Required.Text,
-                MedicalOpinion = MedicalOpinionTextBox_Required.Text,
+                OperationDescription = OperationDescriptionTextBox_Required.Text,
+                OperationResult = OperationResultTextBox_Required.Text,
                 Phone = PhoneNumberTextBox_Required.Text,
                 DoctorId = this.doctorId
             };
             return model;
         }
-
         private void FindControls(Control owner, List<Control> controlList, string name)
         {
             foreach (Control c in owner.Controls)
@@ -90,9 +75,8 @@ namespace Hospital_System
                 if (c.HasChildren) FindControls(c, controlList, name);
             }
         }
-
         private void button4_Click(object sender, EventArgs e)
-        { 
+        {
             this.Close();
         }
     }

@@ -56,6 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Service\IMedicalOperationService.cs" />
+    <Compile Include="Service\Implementation\MedicalOperationService.cs" />
+    <Compile Include="View\Form\RegisterMedicalOperationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form\RegisterMedicalOperationForm.Designer.cs">
+      <DependentUpon>RegisterMedicalOperationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Service\Implementation\UserService.cs" />
     <Compile Include="Service\IUserService.cs" />
     <Compile Include="View\Form\ShowExaminationRequestDetailsForm.cs">
@@ -157,6 +165,7 @@
     <Compile Include="View\Model\PatientMedicalServiceModel.cs" />
     <Compile Include="View\Model\RegisterDoctorModel.cs" />
     <Compile Include="View\Model\RegisterMedicalExaminationModel.cs" />
+    <Compile Include="View\Model\RegisterMedicalOperationModel.cs" />
     <Compile Include="View\Model\RequestMedicalExaminationModel.cs" />
     <Compile Include="View\Model\SampleDoctorModel.cs" />
     <Compile Include="View\Model\SampleExaminationRequestModel.cs" />
@@ -172,6 +181,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\Form\RegisterMedicalOperationForm.resx">
+      <DependentUpon>RegisterMedicalOperationForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Form\ShowExaminationRequestDetailsForm.resx">
       <DependentUpon>ShowExaminationRequestDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
