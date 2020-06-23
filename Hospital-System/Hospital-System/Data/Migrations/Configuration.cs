@@ -5,7 +5,7 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Hospital_System.Data.DbContext.Implementation.HospitalSystemDBContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Hospital_System.Data.DbContext.Implementation.HospitalSystemDbContext>
     {
         public Configuration()
         {
@@ -13,7 +13,7 @@
             AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(Hospital_System.Data.DbContext.Implementation.HospitalSystemDBContext context)
+        protected override void Seed(Hospital_System.Data.DbContext.Implementation.HospitalSystemDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

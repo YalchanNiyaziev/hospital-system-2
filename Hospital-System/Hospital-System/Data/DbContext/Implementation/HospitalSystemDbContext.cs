@@ -11,11 +11,11 @@ using Hospital_System.Migrations;
 
 namespace Hospital_System.Data.DbContext.Implementation
 {
-    public class HospitalSystemDBContext : System.Data.Entity.DbContext, IHospitalSystemDbContext
+    public class HospitalSystemDbContext : System.Data.Entity.DbContext, IHospitalSystemDbContext
     {
-        public HospitalSystemDBContext() : base("HospitalSystemDB")
+        public HospitalSystemDbContext() : base("HospitalSystemDB")
         {
-            Database.SetInitializer<HospitalSystemDBContext>(new MigrateDatabaseToLatestVersion<HospitalSystemDBContext, Configuration>());
+            Database.SetInitializer<HospitalSystemDbContext>(new MigrateDatabaseToLatestVersion<HospitalSystemDbContext, Configuration>());
             // Database.Initialize(true);
         }
 

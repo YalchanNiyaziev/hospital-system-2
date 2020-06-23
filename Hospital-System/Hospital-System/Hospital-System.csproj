@@ -74,6 +74,16 @@
     <Compile Include="Data\Entity\Person.cs" />
     <Compile Include="Data\Entity\User.cs" />
     <Compile Include="Data\Migrations\Configuration.cs" />
+    <Compile Include="Data\Repository\IAdminRepository.cs" />
+    <Compile Include="Data\Repository\IDoctorRepository.cs" />
+    <Compile Include="Data\Repository\IGenericRepository.cs" />
+    <Compile Include="Data\Repository\Implementation\AdminRepository.cs" />
+    <Compile Include="Data\Repository\Implementation\DoctorRepository.cs" />
+    <Compile Include="Data\Repository\Implementation\GenericRepository.cs" />
+    <Compile Include="Data\Repository\Implementation\PatientRepository.cs" />
+    <Compile Include="Data\Repository\Implementation\UserRepository.cs" />
+    <Compile Include="Data\Repository\IPatientRepository.cs" />
+    <Compile Include="Data\Repository\IUserRepository.cs" />
     <Compile Include="Service\IMedicalOperationService.cs" />
     <Compile Include="Service\Implementation\MedicalOperationService.cs" />
     <Compile Include="View\Form\UserInfoForm.cs">
@@ -258,9 +268,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\Repository\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
