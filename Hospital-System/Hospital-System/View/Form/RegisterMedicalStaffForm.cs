@@ -72,9 +72,9 @@ namespace Hospital_System
             model.City = CityComboBox.Text;
             model.Street = StreetTextBox.Text;
             model.StreetNumber = StreetNumberTextBox.Text;
-            model.Ward = WardComboBox.Text;
-            model.Specialization = SpecializationComboBox.Text;
-            model.Role = RoleComboBox.Text;
+            model.Ward = WardComboBox.SelectedIndex;
+            model.Specialization = SpecializationComboBox.SelectedIndex;
+            model.Role = RoleComboBox.SelectedIndex;
             model.Username = UsernameTextBox.Text;
             model.Password = PasswordBox.Text;
             model.Phone = PhoneTextBox.Text;

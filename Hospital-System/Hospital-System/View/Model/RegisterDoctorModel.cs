@@ -13,9 +13,9 @@ namespace Hospital_System.View.Model
         public string  City { get; set; }
         public string Street { get; set; }
         public string StreetNumber { get; set; }
-        public string Ward { get; set; }
-        public string Specialization { get; set; }
-        public string Role { get; set; }
+        public int Ward { get; set; }
+        public int Specialization { get; set; }
+        public int Role { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string Phone { get; set; }

@@ -183,11 +183,40 @@
             // 
             // CityComboBox
             // 
-            this.CityComboBox.DropDownHeight = 36;
+            this.CityComboBox.DropDownHeight = 150;
+            this.CityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CityComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CityComboBox.ForeColor = System.Drawing.Color.Turquoise;
             this.CityComboBox.FormattingEnabled = true;
             this.CityComboBox.IntegralHeight = false;
+            this.CityComboBox.Items.AddRange(new object[] {
+            "Blagoevgrad",
+            "Burgas",
+            "Dobrich",
+            "Gabrovo",
+            "Haskovo",
+            "Kardzhali",
+            "Kyustendil",
+            "Lovech",
+            "Montana",
+            "Pazardzhik",
+            "Pernik",
+            "Pleven",
+            "Plovdiv",
+            "Razgrad",
+            "Ruse",
+            "Shumen",
+            "Silistra",
+            "Sliven",
+            "Smolyan",
+            "Sofia",
+            "Stara Zagora",
+            "Targovishte",
+            "Varna",
+            "Veliko Tarnovo",
+            "Vidin",
+            "Vratsa",
+            "Yambol"});
             this.CityComboBox.Location = new System.Drawing.Point(504, 255);
             this.CityComboBox.MinimumSize = new System.Drawing.Size(400, 0);
             this.CityComboBox.Name = "CityComboBox";
@@ -280,11 +309,24 @@
             // 
             // WardComboBox
             // 
-            this.WardComboBox.DropDownHeight = 36;
+            this.WardComboBox.DropDownHeight = 150;
+            this.WardComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.WardComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.WardComboBox.ForeColor = System.Drawing.Color.Turquoise;
             this.WardComboBox.FormattingEnabled = true;
             this.WardComboBox.IntegralHeight = false;
+            this.WardComboBox.Items.AddRange(new object[] {
+            "Cardiology",
+            "Dental Medicine",
+            "Gynecology ",
+            "Hematology",
+            "Neurology",
+            "Orthopedy",
+            "Physiotherapy",
+            "Psychiatry",
+            "General Surgery ",
+            "Neurosurgery",
+            "Endocrinology"});
             this.WardComboBox.Location = new System.Drawing.Point(504, 395);
             this.WardComboBox.MinimumSize = new System.Drawing.Size(400, 0);
             this.WardComboBox.Name = "WardComboBox";
@@ -304,11 +346,32 @@
             // 
             // SpecializationComboBox
             // 
-            this.SpecializationComboBox.DropDownHeight = 36;
+            this.SpecializationComboBox.DropDownHeight = 150;
+            this.SpecializationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SpecializationComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SpecializationComboBox.ForeColor = System.Drawing.Color.Turquoise;
             this.SpecializationComboBox.FormattingEnabled = true;
             this.SpecializationComboBox.IntegralHeight = false;
+            this.SpecializationComboBox.Items.AddRange(new object[] {
+            "Anesthesiology",
+            "Cardiology",
+            "Cardiac Surgery",
+            "Clinical Hematology",
+            "Clinical Virology",
+            "General Medicine",
+            "Nephrology",
+            "Neurosurgery",
+            "Obstetrics And Gynecology",
+            "Oral Pathology",
+            "Orthodontics",
+            "Orthopedics And Traumatology",
+            "Pediatric Surgery",
+            "Physical And Rehabilitation",
+            "Pneumology And Phthisiology",
+            "Rheumatology",
+            "Surgery",
+            "Virology",
+            "Urology"});
             this.SpecializationComboBox.Location = new System.Drawing.Point(504, 443);
             this.SpecializationComboBox.MinimumSize = new System.Drawing.Size(400, 0);
             this.SpecializationComboBox.Name = "SpecializationComboBox";
@@ -329,10 +392,13 @@
             // RoleComboBox
             // 
             this.RoleComboBox.DropDownHeight = 36;
+            this.RoleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.RoleComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RoleComboBox.ForeColor = System.Drawing.Color.Turquoise;
             this.RoleComboBox.FormattingEnabled = true;
             this.RoleComboBox.IntegralHeight = false;
+            this.RoleComboBox.Items.AddRange(new object[] {
+            "Doctor"});
             this.RoleComboBox.Location = new System.Drawing.Point(504, 495);
             this.RoleComboBox.MinimumSize = new System.Drawing.Size(400, 0);
             this.RoleComboBox.Name = "RoleComboBox";

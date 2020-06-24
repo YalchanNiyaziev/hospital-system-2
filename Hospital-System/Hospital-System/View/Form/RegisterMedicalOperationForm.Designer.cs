@@ -45,13 +45,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.PatientCityComboBox_Required = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.listView2 = new System.Windows.Forms.ListView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.PatientCityComboBox_Required = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // PatientStreetNumberTextBox_Required
@@ -239,19 +239,6 @@
             this.label5.TabIndex = 111;
             this.label5.Text = "City:";
             // 
-            // PatientCityComboBox_Required
-            // 
-            this.PatientCityComboBox_Required.DropDownHeight = 36;
-            this.PatientCityComboBox_Required.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PatientCityComboBox_Required.ForeColor = System.Drawing.Color.Turquoise;
-            this.PatientCityComboBox_Required.FormattingEnabled = true;
-            this.PatientCityComboBox_Required.IntegralHeight = false;
-            this.PatientCityComboBox_Required.Location = new System.Drawing.Point(509, 263);
-            this.PatientCityComboBox_Required.MinimumSize = new System.Drawing.Size(400, 0);
-            this.PatientCityComboBox_Required.Name = "PatientCityComboBox_Required";
-            this.PatientCityComboBox_Required.Size = new System.Drawing.Size(400, 37);
-            this.PatientCityComboBox_Required.TabIndex = 110;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -316,12 +303,55 @@
             this.listView1.TabIndex = 101;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
+            // PatientCityComboBox_Required
+            // 
+            this.PatientCityComboBox_Required.DropDownHeight = 150;
+            this.PatientCityComboBox_Required.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PatientCityComboBox_Required.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PatientCityComboBox_Required.ForeColor = System.Drawing.Color.Turquoise;
+            this.PatientCityComboBox_Required.FormattingEnabled = true;
+            this.PatientCityComboBox_Required.IntegralHeight = false;
+            this.PatientCityComboBox_Required.Items.AddRange(new object[] {
+            "Blagoevgrad",
+            "Burgas",
+            "Dobrich",
+            "Gabrovo",
+            "Haskovo",
+            "Kardzhali",
+            "Kyustendil",
+            "Lovech",
+            "Montana",
+            "Pazardzhik",
+            "Pernik",
+            "Pleven",
+            "Plovdiv",
+            "Razgrad",
+            "Ruse",
+            "Shumen",
+            "Silistra",
+            "Sliven",
+            "Smolyan",
+            "Sofia",
+            "Stara Zagora",
+            "Targovishte",
+            "Varna",
+            "Veliko Tarnovo",
+            "Vidin",
+            "Vratsa",
+            "Yambol"});
+            this.PatientCityComboBox_Required.Location = new System.Drawing.Point(509, 263);
+            this.PatientCityComboBox_Required.MinimumSize = new System.Drawing.Size(400, 0);
+            this.PatientCityComboBox_Required.Name = "PatientCityComboBox_Required";
+            this.PatientCityComboBox_Required.Size = new System.Drawing.Size(400, 37);
+            this.PatientCityComboBox_Required.TabIndex = 128;
+            // 
             // RegisterMedicalOperationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1332, 753);
+            this.Controls.Add(this.PatientCityComboBox_Required);
             this.Controls.Add(this.PatientStreetNumberTextBox_Required);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.button4);
@@ -339,7 +369,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.PatientCityComboBox_Required);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listView2);
@@ -375,12 +404,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox PatientCityComboBox_Required;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ComboBox PatientCityComboBox_Required;
     }
 }
