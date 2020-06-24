@@ -12,13 +12,16 @@ namespace Hospital_System.Data.Repository.Implementation
 {
     public class MedicalExaminationRequestRepository :GenericRepository<MedicalExaminationRequest>, IMedicalExaminationRequestRepository
     {
-        public MedicalExaminationRequestRepository() : base(new HospitalSystemDbContext())
+        private IHospitalSystemDbContext context;
+
+        public MedicalExaminationRequestRepository(IHospitalSystemDbContext context) : base(context)
         {
+            this.context = context;
         }
 
         public List<MedicalExaminationRequest> FindByDoctor(int doctorId)
         {
-            IHospitalSystemDbContext context = new HospitalSystemDbContext();
+           
 
             List<MedicalExaminationRequest> examinationRequests
                 = context.Set<MedicalExaminationRequest>()
@@ -31,7 +34,6 @@ namespace Hospital_System.Data.Repository.Implementation
 
         public MedicalExaminationRequest FindById(int id)
         {
-            HospitalSystemDbContext context = new HospitalSystemDbContext();
 
             MedicalExaminationRequest examinationRequest = context.Set<MedicalExaminationRequest>()
                 .Include(e => e.Patient)

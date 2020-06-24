@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,11 @@ namespace Hospital_System.Data.DbContext.Implementation
         {
             base.SaveChanges();
         }
+
+        // public new DbEntityEntry<T> Entry<T>(T entity) where T : class
+        // {
+        //     return base.Entry(entity);
+        // }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

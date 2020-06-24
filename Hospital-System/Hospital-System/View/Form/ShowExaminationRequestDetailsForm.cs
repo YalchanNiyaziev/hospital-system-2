@@ -15,6 +15,8 @@ namespace Hospital_System
 {
     public partial class ShowExaminationRequestDetailsForm : Form
     {
+        private const int ExaminationRequestApproveCode = 1;
+        private const int ExaminationRequestRejectCode = 2;
         private IMedicalExaminationRequestService medicalExaminationRequestService;
         private ExaminationRequestDetailsModel requestExaminationModel;
         private int examinationRequestId;
@@ -41,6 +43,18 @@ namespace Hospital_System
             ExaminationTimeLabel.Text = this.requestExaminationModel.Time;
             PatientPhoneLabel.Text = this.requestExaminationModel.Phone;
             PatientEmailLabel.Text = this.requestExaminationModel.Email;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            medicalExaminationRequestService.UpdateStatus(examinationRequestId, ExaminationRequestApproveCode);
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            medicalExaminationRequestService.UpdateStatus(examinationRequestId, ExaminationRequestRejectCode);
+            this.Close();
         }
     }
 }

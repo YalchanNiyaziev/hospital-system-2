@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Hospital_System.Data.DbContext.Implementation;
 using Hospital_System.Data.Entity;
 using Hospital_System.Data.Entity.Enums;
 using Hospital_System.Data.Repository;
@@ -17,7 +18,7 @@ namespace Hospital_System.Service.Implementation
 
         public MedicalExaminationRequestService()
         {
-            this.examinationRequestRepository = new MedicalExaminationRequestRepository();
+            this.examinationRequestRepository = new MedicalExaminationRequestRepository(new HospitalSystemDbContext());
         }
 
         public void Save(RequestMedicalExaminationModel model)
@@ -47,7 +48,8 @@ namespace Hospital_System.Service.Implementation
 
         public List<SampleExaminationRequestModel> GetAllPendingRequestByDoctor(int doctorId)
         {
-            List<SampleExaminationRequestModel> modelList = new List<SampleExaminationRequestModel>(); ;
+            List<SampleExaminationRequestModel> modelList = new List<SampleExaminationRequestModel>();
+            ;
             List<MedicalExaminationRequest> medicalExaminationRequests
                 = examinationRequestRepository.FindByDoctor(doctorId);
 
@@ -57,7 +59,8 @@ namespace Hospital_System.Service.Implementation
                 {
                     modelList.Add(new SampleExaminationRequestModel
                     {
-                        Date = examinationRequest.ToTime.TimeOfDay+ " "+ examinationRequest.ToDate.ToShortDateString(),
+                        Date = examinationRequest.ToTime.TimeOfDay + " " +
+                               examinationRequest.ToDate.ToShortDateString(),
                         Name = examinationRequest.Patient.Name,
                         Id = examinationRequest.Id,
                         Status = examinationRequest.Status.ToString()
@@ -86,7 +89,18 @@ namespace Hospital_System.Service.Implementation
                     Email = examinationRequest.Patient.Email
                 };
             }
+
             return model;
+        }
+
+        public void UpdateStatus(int examinationRequestId, int statusCode)
+        {
+            MedicalExaminationRequest examinationRequest = examinationRequestRepository.FindById(examinationRequestId);
+            if (examinationRequest != null)
+            {
+                examinationRequest.Status = (ExaminationRequestStatusType) statusCode;
+                examinationRequestRepository.Update(examinationRequest);
+            }
         }
     }
 }

@@ -12,5 +12,6 @@ namespace Hospital_System.Service
         void Save(RequestMedicalExaminationModel model);
         List<SampleExaminationRequestModel> GetAllPendingRequestByDoctor(int doctorId);
         ExaminationRequestDetailsModel GetMedicalExaminationRequestById(int id);
+        void UpdateStatus(int examinationRequestId, int examinationRequestStatusCode);
     }
 }
