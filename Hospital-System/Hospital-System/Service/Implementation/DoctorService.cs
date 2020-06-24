@@ -46,157 +46,18 @@ namespace Hospital_System.Service.Implementation
         public List<SampleDoctorModel> GetAllDoctorsAsSampleDoctorModels()
         {
             List<SampleDoctorModel> sampleDoctorModels = new List<SampleDoctorModel>();
-            sampleDoctorModels.Add(new SampleDoctorModel
+            List<Doctor> doctors = doctorRepository.All().ToList();
+            foreach (Doctor doctor in doctors)
             {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 5
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 111
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Medicine",
-                Specialization = "Surgery",
-                Id = 88
-            }); sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "0656545",
-                Ward = "Dental Meddssssssssssssssssssssssssxxicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belchev",
-                Phone = "05",
-                Ward = "Dedicine",
-                Specialization = "Surgery",
-                Id = 88
-            });
-            sampleDoctorModels.Add(new SampleDoctorModel
-            {
-                Name = "Ivan Belcddddddddddddddddddddddddddddddddhev",
-                Phone = "0656fffffffffffffff545",
-                Ward = "Dental Medicfffffffffffffine",
-                Specialization = "Surgefffffffffffry",
-                Id = 88
-            });
+                sampleDoctorModels.Add(new SampleDoctorModel
+                {
+                    Id = doctor.Id,
+                    Name=doctor.Name,
+                    Phone = doctor.Phone,
+                    Specialization = doctor.SpecializationType.ToString(),
+                    Ward = doctor.WardType.ToString()
+                });
+            }
 
             return sampleDoctorModels;
 

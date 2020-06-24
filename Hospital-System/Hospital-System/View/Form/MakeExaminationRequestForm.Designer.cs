@@ -187,11 +187,40 @@
             // 
             // PatientCityComboBox_Required
             // 
-            this.PatientCityComboBox_Required.DropDownHeight = 36;
+            this.PatientCityComboBox_Required.DropDownHeight = 150;
+            this.PatientCityComboBox_Required.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PatientCityComboBox_Required.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.PatientCityComboBox_Required.ForeColor = System.Drawing.Color.Turquoise;
             this.PatientCityComboBox_Required.FormattingEnabled = true;
             this.PatientCityComboBox_Required.IntegralHeight = false;
+            this.PatientCityComboBox_Required.Items.AddRange(new object[] {
+            "Blagoevgrad",
+            "Burgas",
+            "Dobrich",
+            "Gabrovo",
+            "Haskovo",
+            "Kardzhali",
+            "Kyustendil",
+            "Lovech",
+            "Montana",
+            "Pazardzhik",
+            "Pernik",
+            "Pleven",
+            "Plovdiv",
+            "Razgrad",
+            "Ruse",
+            "Shumen",
+            "Silistra",
+            "Sliven",
+            "Smolyan",
+            "Sofia",
+            "Stara Zagora",
+            "Targovishte",
+            "Varna",
+            "Veliko Tarnovo",
+            "Vidin",
+            "Vratsa",
+            "Yambol"});
             this.PatientCityComboBox_Required.Location = new System.Drawing.Point(322, 208);
             this.PatientCityComboBox_Required.MinimumSize = new System.Drawing.Size(400, 0);
             this.PatientCityComboBox_Required.Name = "PatientCityComboBox_Required";
@@ -235,8 +264,10 @@
             this.ExaminationTimeToTimePicker_Required.CalendarTitleForeColor = System.Drawing.Color.Turquoise;
             this.ExaminationTimeToTimePicker_Required.CalendarTrailingForeColor = System.Drawing.Color.Turquoise;
             this.ExaminationTimeToTimePicker_Required.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExaminationTimeToTimePicker_Required.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.ExaminationTimeToTimePicker_Required.Location = new System.Drawing.Point(322, 390);
             this.ExaminationTimeToTimePicker_Required.Name = "ExaminationTimeToTimePicker_Required";
+            this.ExaminationTimeToTimePicker_Required.ShowUpDown = true;
             this.ExaminationTimeToTimePicker_Required.Size = new System.Drawing.Size(400, 34);
             this.ExaminationTimeToTimePicker_Required.TabIndex = 118;
             // 
@@ -328,6 +359,7 @@
             this.MinimumSize = new System.Drawing.Size(960, 700);
             this.Name = "MakeExaminationRequestForm";
             this.Text = "MakeExaminationRequestForm";
+            this.Load += new System.EventHandler(this.MakeExaminationRequestForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

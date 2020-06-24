@@ -77,9 +77,11 @@
     <Compile Include="Data\Repository\IAdminRepository.cs" />
     <Compile Include="Data\Repository\IDoctorRepository.cs" />
     <Compile Include="Data\Repository\IGenericRepository.cs" />
+    <Compile Include="Data\Repository\IMedicalExaminationRequestRepository.cs" />
     <Compile Include="Data\Repository\Implementation\AdminRepository.cs" />
     <Compile Include="Data\Repository\Implementation\DoctorRepository.cs" />
     <Compile Include="Data\Repository\Implementation\GenericRepository.cs" />
+    <Compile Include="Data\Repository\Implementation\MedicalExaminationRequestRepository.cs" />
     <Compile Include="Data\Repository\Implementation\PatientRepository.cs" />
     <Compile Include="Data\Repository\Implementation\UserRepository.cs" />
     <Compile Include="Data\Repository\IPatientRepository.cs" />

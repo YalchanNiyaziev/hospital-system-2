@@ -16,7 +16,7 @@ namespace Hospital_System.Data.Entity
         [Column("name")]
         public string Name { get; set; }
 
-        [Required]
+        
         [MaxLength(10)]
         [Column("egn")]
         public string Ucn { get; set; }
