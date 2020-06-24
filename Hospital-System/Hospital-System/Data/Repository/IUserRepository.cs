@@ -9,5 +9,6 @@ namespace Hospital_System.Data.Repository
 {
    public interface IUserRepository : IGenericRepository<User>
     {
+        User GetUser(string username, string password);
     }
 }

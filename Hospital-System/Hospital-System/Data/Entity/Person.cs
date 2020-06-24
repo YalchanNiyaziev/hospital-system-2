@@ -11,7 +11,6 @@ namespace Hospital_System.Data.Entity
     [Table(("people"))]
     public abstract class Person : BaseEntity
     {
-        [Required]
         [MaxLength(100)]
         [Column("name")]
         public string Name { get; set; }

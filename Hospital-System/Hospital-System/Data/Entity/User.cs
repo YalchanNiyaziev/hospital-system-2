@@ -11,6 +11,7 @@ namespace Hospital_System.Data.Entity
     [Table("users")]
     public class User : Person
     {
+
         [Column("username")]
         public string Username { get; set; }
 

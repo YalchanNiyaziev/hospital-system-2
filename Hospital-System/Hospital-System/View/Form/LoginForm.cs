@@ -40,8 +40,8 @@ namespace Hospital_System
             FindControls(this, controls, ControlIdentifier);
             if (!FieldValidator.HasEmptyFields(controls.ToArray()))
             {
-                LoginModel model = CreateLoginModel(username, password);
-                UserModel userModel = userService.Login(model);
+                LoginModel loginModel = CreateLoginModel(username, password);
+                UserModel userModel = userService.Login(loginModel);
                 if (userModel != null)
                 {
                     Form userForm = this.GetFormByRole(userModel);

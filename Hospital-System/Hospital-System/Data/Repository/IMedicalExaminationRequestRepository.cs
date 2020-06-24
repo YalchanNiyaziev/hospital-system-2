@@ -9,5 +9,7 @@ namespace Hospital_System.Data.Repository
 {
     public interface IMedicalExaminationRequestRepository : IGenericRepository<MedicalExaminationRequest>
     {
+        List<MedicalExaminationRequest> FindByDoctor(int doctorId);
+        MedicalExaminationRequest FindById(int id);
     }
 }

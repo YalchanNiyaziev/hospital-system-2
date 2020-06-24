@@ -24,7 +24,7 @@ namespace Hospital_System
 
         private void DoctorHomeForm_Load(object sender, EventArgs e)
         {
-            DoctorMessageLabel.Text += user.Name.ToUpper();
+            DoctorMessageLabel.Text = DoctorMessageLabel.Text+"\n\r      "+user.Name.ToUpper();
         }
 
         private void button3_Click(object sender, EventArgs e)

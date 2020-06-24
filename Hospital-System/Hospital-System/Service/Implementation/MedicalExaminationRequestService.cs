@@ -17,7 +17,7 @@ namespace Hospital_System.Service.Implementation
 
         public MedicalExaminationRequestService()
         {
-            this.examinationRequestRepository= new MedicalExaminationRequestRepository();
+            this.examinationRequestRepository = new MedicalExaminationRequestRepository();
         }
 
         public void Save(RequestMedicalExaminationModel model)
@@ -36,79 +36,57 @@ namespace Hospital_System.Service.Implementation
                     Email = model.Email,
                     Phone = model.Phone,
                 },
-                ToDate =DateTime.ParseExact(model.DateTo, "MM/dd/yyyy", null),
+                ToDate = DateTime.ParseExact(model.DateTo, "MM/dd/yyyy", null),
                 ToTime = DateTime.ParseExact(model.TimeTo, "HH:mm:ss", null),
                 DoctorId = model.DoctorId,
                 Status = ExaminationRequestStatusType.Pending
             };
-            
+
             this.examinationRequestRepository.Add(medicalExaminationRequest);
         }
 
         public List<SampleExaminationRequestModel> GetAllPendingRequestByDoctor(int doctorId)
         {
+            List<SampleExaminationRequestModel> modelList = new List<SampleExaminationRequestModel>(); ;
+            List<MedicalExaminationRequest> medicalExaminationRequests
+                = examinationRequestRepository.FindByDoctor(doctorId);
 
-            List<SampleExaminationRequestModel> modelList = this.GetAllRequestByDoctor(doctorId);
+            if (medicalExaminationRequests.Count > 0)
+            {
+                foreach (var examinationRequest in medicalExaminationRequests)
+                {
+                    modelList.Add(new SampleExaminationRequestModel
+                    {
+                        Date = examinationRequest.ToTime.TimeOfDay+ " "+ examinationRequest.ToDate.ToShortDateString(),
+                        Name = examinationRequest.Patient.Name,
+                        Id = examinationRequest.Id,
+                        Status = examinationRequest.Status.ToString()
+                    });
+                }
+            }
 
-            modelList.Add(new SampleExaminationRequestModel
-            {
-                Date = DateTime.Now.ToString(),
-                Name = "Test"+modelList.Count,
-                Status = "Pending",
-                Id=modelList.Count
-            });
-            modelList.Add(new SampleExaminationRequestModel
-            {
-                Date = DateTime.Now.ToString(),
-                Name = "Test" + modelList.Count,
-                Status = "Pending",
-                Id = modelList.Count
-            });
-            modelList.Add(new SampleExaminationRequestModel
-            {
-                Date = DateTime.Now.ToString(),
-                Name = "Test" + modelList.Count,
-                Status = "Pending",
-                Id = modelList.Count
-            });
-            modelList.Add(new SampleExaminationRequestModel
-            {
-                Date = DateTime.Now.ToString(),
-                Name = "Test" + modelList.Count,
-                Status = "Pending",
-                Id = modelList.Count
-            });
-            modelList.Add(new SampleExaminationRequestModel
-            {
-                Date = DateTime.Now.ToString(),
-                Name = "Test" + modelList.Count,
-                Status = "Pending",
-                Id = modelList.Count
-            });
             return modelList;
         }
 
         public ExaminationRequestDetailsModel GetMedicalExaminationRequestById(int id)
         {
-            ExaminationRequestDetailsModel model = new ExaminationRequestDetailsModel
+            MedicalExaminationRequest examinationRequest = this.examinationRequestRepository.FindById(id);
+            ExaminationRequestDetailsModel model = null;
+            if (examinationRequest != null)
             {
-                Name = "Ivan Penchev",
-                City = "Varna",
-                Street = "Anton Nedelchev",
-                StreetNumber = "11A",
-                Date = DateTime.Now.ToString(),
-                Time = DateTime.Now.ToString(),
-                Phone = "02545453",
-                Email = "ivanco@abv.bg"
-            };
+                model = new ExaminationRequestDetailsModel
+                {
+                    Name = examinationRequest.Patient.Name,
+                    City = examinationRequest.Patient.Address.City,
+                    Street = examinationRequest.Patient.Address.Street,
+                    StreetNumber = examinationRequest.Patient.Address.StreetNumber,
+                    Date = examinationRequest.ToDate.ToShortDateString(),
+                    Time = examinationRequest.ToTime.ToShortTimeString(),
+                    Phone = examinationRequest.Patient.Phone,
+                    Email = examinationRequest.Patient.Email
+                };
+            }
             return model;
-        }
-
-        private List<SampleExaminationRequestModel> GetAllRequestByDoctor(int doctorId)
-        {
-            List<SampleExaminationRequestModel> modelList = new List<SampleExaminationRequestModel>();
-            
-            return modelList;
         }
     }
 }
