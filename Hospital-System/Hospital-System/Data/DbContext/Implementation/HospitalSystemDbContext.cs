@@ -46,16 +46,7 @@ namespace Hospital_System.Data.DbContext.Implementation
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<MedicalExamination>().Map(e =>
-            {
-                e.MapInheritedProperties();
-                e.ToTable("medical_examinations");
-            });
-            modelBuilder.Entity<MedicalOperation>().Map(o =>
-            {
-                o.MapInheritedProperties();
-                o.ToTable("medical_operations");
-            });
+          
         }
     }
 }

@@ -34,6 +34,8 @@ namespace Hospital_System.Data.Repository.Implementation
         {
 
             this.set.Add(entity);
+            // var entry = context.Entry(entity);
+            // entry.State = EntityState.Added;
             context.SaveChanges();
 
         }

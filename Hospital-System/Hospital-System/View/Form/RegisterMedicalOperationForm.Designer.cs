@@ -36,7 +36,6 @@
             this.OperationDescriptionTextBox_Required = new System.Windows.Forms.TextBox();
             this.PatientStreetTextBox_Required = new System.Windows.Forms.TextBox();
             this.PatientUCNTextBox_Required = new System.Windows.Forms.TextBox();
-            this.ExaminationDatePicker_Required = new System.Windows.Forms.DateTimePicker();
             this.PatientNameTextBox_Required = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.PatientCityComboBox_Required = new System.Windows.Forms.ComboBox();
+            this.OperationDatePicker_Required = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // PatientStreetNumberTextBox_Required
@@ -137,17 +137,6 @@
             this.PatientUCNTextBox_Required.Name = "PatientUCNTextBox_Required";
             this.PatientUCNTextBox_Required.Size = new System.Drawing.Size(400, 36);
             this.PatientUCNTextBox_Required.TabIndex = 120;
-            // 
-            // ExaminationDatePicker_Required
-            // 
-            this.ExaminationDatePicker_Required.CalendarForeColor = System.Drawing.Color.Turquoise;
-            this.ExaminationDatePicker_Required.CalendarTitleForeColor = System.Drawing.Color.Turquoise;
-            this.ExaminationDatePicker_Required.CalendarTrailingForeColor = System.Drawing.Color.Turquoise;
-            this.ExaminationDatePicker_Required.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExaminationDatePicker_Required.Location = new System.Drawing.Point(509, 398);
-            this.ExaminationDatePicker_Required.Name = "ExaminationDatePicker_Required";
-            this.ExaminationDatePicker_Required.Size = new System.Drawing.Size(400, 34);
-            this.ExaminationDatePicker_Required.TabIndex = 119;
             // 
             // PatientNameTextBox_Required
             // 
@@ -345,12 +334,24 @@
             this.PatientCityComboBox_Required.Size = new System.Drawing.Size(400, 37);
             this.PatientCityComboBox_Required.TabIndex = 128;
             // 
+            // OperationDatePicker_Required
+            // 
+            this.OperationDatePicker_Required.CalendarForeColor = System.Drawing.Color.Turquoise;
+            this.OperationDatePicker_Required.CalendarTitleForeColor = System.Drawing.Color.Turquoise;
+            this.OperationDatePicker_Required.CalendarTrailingForeColor = System.Drawing.Color.Turquoise;
+            this.OperationDatePicker_Required.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OperationDatePicker_Required.Location = new System.Drawing.Point(509, 394);
+            this.OperationDatePicker_Required.Name = "OperationDatePicker_Required";
+            this.OperationDatePicker_Required.Size = new System.Drawing.Size(400, 34);
+            this.OperationDatePicker_Required.TabIndex = 129;
+            // 
             // RegisterMedicalOperationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1332, 753);
+            this.Controls.Add(this.OperationDatePicker_Required);
             this.Controls.Add(this.PatientCityComboBox_Required);
             this.Controls.Add(this.PatientStreetNumberTextBox_Required);
             this.Controls.Add(this.label11);
@@ -360,7 +361,6 @@
             this.Controls.Add(this.OperationDescriptionTextBox_Required);
             this.Controls.Add(this.PatientStreetTextBox_Required);
             this.Controls.Add(this.PatientUCNTextBox_Required);
-            this.Controls.Add(this.ExaminationDatePicker_Required);
             this.Controls.Add(this.PatientNameTextBox_Required);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label10);
@@ -395,7 +395,6 @@
         private System.Windows.Forms.TextBox OperationDescriptionTextBox_Required;
         private System.Windows.Forms.TextBox PatientStreetTextBox_Required;
         private System.Windows.Forms.TextBox PatientUCNTextBox_Required;
-        private System.Windows.Forms.DateTimePicker ExaminationDatePicker_Required;
         private System.Windows.Forms.TextBox PatientNameTextBox_Required;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label10;
@@ -411,5 +410,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ComboBox PatientCityComboBox_Required;
+        private System.Windows.Forms.DateTimePicker OperationDatePicker_Required;
     }
 }

@@ -13,5 +13,11 @@ namespace Hospital_System.Data.Repository.Implementation
         public PatientRepository(IHospitalSystemDbContext context) : base(context)
         {
         }
+
+        public Patient FindByUcn(string ucn)
+        {
+            Patient patient = SearchFor(p => p.Ucn.Equals(ucn)).FirstOrDefault();
+            return patient;
+        }
     }
 }

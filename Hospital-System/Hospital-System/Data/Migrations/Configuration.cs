@@ -1,11 +1,15 @@
-﻿namespace Hospital_System.Migrations
+﻿using Hospital_System.Data.Entity;
+using Hospital_System.Data.Entity.Enums;
+
+namespace Hospital_System.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Hospital_System.Data.DbContext.Implementation.HospitalSystemDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<
+        Hospital_System.Data.DbContext.Implementation.HospitalSystemDbContext>
     {
         public Configuration()
         {
@@ -20,14 +24,19 @@
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
 
-            // if (context.AdminstrativeStaff.Any())
-            // {
-            //     return;
-            // }
-            // context.AdministrativeSta.Add
-            // {
-            //     Admin
-            // }
+            if (context.Admins.Any())
+            {
+                return;
+            }
+            else
+            {
+                context.Admins.Add(new Admin
+                {
+                    Username = "admin",
+                    Password = "admin",
+                    Role = UserRoleType.Admin
+                });
+            }
         }
     }
 }

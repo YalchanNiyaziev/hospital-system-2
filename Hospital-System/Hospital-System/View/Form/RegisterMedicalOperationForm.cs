@@ -16,15 +16,16 @@ namespace Hospital_System
 {
     public partial class RegisterMedicalOperationForm : Form
     {
+        private readonly int MedicalServiceType = 1;
         private readonly string ControlIdentifier = "_Required";
         private List<Control> controls;
-        private IMedicalOperationService medicalOperationService;
+        private IMedicalServiceService medicalServiceService;
         private int doctorId;
         public RegisterMedicalOperationForm(int doctorId)
         {
             this.controls = new List<Control>();
             this.doctorId = doctorId;
-            this.medicalOperationService = new MedicalOperationService();
+            this.medicalServiceService = new MedicalServiceService();
             InitializeComponent();
         }
 
@@ -35,7 +36,7 @@ namespace Hospital_System
             {
 
                 RegisterMedicalOperationModel medicalOperationModel = CreateModel();
-                medicalOperationService.Save(medicalOperationModel);
+                medicalServiceService.Save(medicalOperationModel, MedicalServiceType);
                 MessageBox.Show("Successfully recorded medical examination");
                 this.Close();
 
@@ -56,7 +57,7 @@ namespace Hospital_System
                 City = PatientCityComboBox_Required.Text,
                 Street = PatientStreetNumberTextBox_Required.Text,
                 StreetNumber = PatientStreetNumberTextBox_Required.Text,
-                Date = ExaminationDatePicker_Required.Text,
+                Date = OperationDatePicker_Required.Value.ToString("MM/dd/yyyy"),
                 OperationDescription = OperationDescriptionTextBox_Required.Text,
                 OperationResult = OperationResultTextBox_Required.Text,
                 Phone = PhoneNumberTextBox_Required.Text,

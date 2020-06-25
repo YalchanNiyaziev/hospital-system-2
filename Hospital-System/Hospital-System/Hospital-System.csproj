@@ -63,12 +63,11 @@
     <Compile Include="Data\Entity\BaseEntity.cs" />
     <Compile Include="Data\Entity\Doctor.cs" />
     <Compile Include="Data\Entity\Enums\ExaminationRequestStatusType.cs" />
+    <Compile Include="Data\Entity\Enums\MedicalServiceType.cs" />
     <Compile Include="Data\Entity\Enums\MedicalSpecializationType.cs" />
     <Compile Include="Data\Entity\Enums\MedicalWardType.cs" />
     <Compile Include="Data\Entity\Enums\UserRoleType.cs" />
-    <Compile Include="Data\Entity\MedicalExamination.cs" />
     <Compile Include="Data\Entity\MedicalExaminationRequest.cs" />
-    <Compile Include="Data\Entity\MedicalOperation.cs" />
     <Compile Include="Data\Entity\MedicalService.cs" />
     <Compile Include="Data\Entity\Patient.cs" />
     <Compile Include="Data\Entity\Person.cs" />
@@ -78,16 +77,16 @@
     <Compile Include="Data\Repository\IDoctorRepository.cs" />
     <Compile Include="Data\Repository\IGenericRepository.cs" />
     <Compile Include="Data\Repository\IMedicalExaminationRequestRepository.cs" />
+    <Compile Include="Data\Repository\IMedicalServiceRepository.cs" />
     <Compile Include="Data\Repository\Implementation\AdminRepository.cs" />
     <Compile Include="Data\Repository\Implementation\DoctorRepository.cs" />
     <Compile Include="Data\Repository\Implementation\GenericRepository.cs" />
     <Compile Include="Data\Repository\Implementation\MedicalExaminationRequestRepository.cs" />
+    <Compile Include="Data\Repository\Implementation\MedicalServiceRepository.cs" />
     <Compile Include="Data\Repository\Implementation\PatientRepository.cs" />
     <Compile Include="Data\Repository\Implementation\UserRepository.cs" />
     <Compile Include="Data\Repository\IPatientRepository.cs" />
     <Compile Include="Data\Repository\IUserRepository.cs" />
-    <Compile Include="Service\IMedicalOperationService.cs" />
-    <Compile Include="Service\Implementation\MedicalOperationService.cs" />
     <Compile Include="View\Form\UserInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,7 +113,7 @@
     <Compile Include="View\Form\ListDoctorExaminationRequestForm.Designer.cs">
       <DependentUpon>ListDoctorExaminationRequestForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Service\IMedicalServiceSevice.cs" />
+    <Compile Include="Service\IMedicalServiceService.cs" />
     <Compile Include="Service\Implementation\MedicalServiceService.cs" />
     <Compile Include="View\Form\ListPatientMedicalServicesForm.cs">
       <SubType>Form</SubType>
@@ -131,9 +130,7 @@
       <DependentUpon>ListDoctorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Service\IDoctorService.cs" />
-    <Compile Include="Service\IMedicalExaminationService.cs" />
     <Compile Include="Service\Implementation\DoctorService.cs" />
-    <Compile Include="Service\Implementation\MedicalExaminationService.cs" />
     <Compile Include="View\Form\ListMedicalExaminationForm.cs">
       <SubType>Form</SubType>
     </Compile>

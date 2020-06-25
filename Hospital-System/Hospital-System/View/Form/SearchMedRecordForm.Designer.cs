@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UCNTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -144,15 +144,15 @@
             this.listView2.TabIndex = 14;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
-            // textBox1
+            // UCNTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.Color.Turquoise;
-            this.textBox1.Location = new System.Drawing.Point(467, 284);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(559, 47);
-            this.textBox1.TabIndex = 15;
+            this.UCNTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.UCNTextBox.ForeColor = System.Drawing.Color.Turquoise;
+            this.UCNTextBox.Location = new System.Drawing.Point(467, 284);
+            this.UCNTextBox.Multiline = true;
+            this.UCNTextBox.Name = "UCNTextBox";
+            this.UCNTextBox.Size = new System.Drawing.Size(559, 47);
+            this.UCNTextBox.TabIndex = 15;
             // 
             // label2
             // 
@@ -161,20 +161,20 @@
             this.label2.ForeColor = System.Drawing.Color.Turquoise;
             this.label2.Location = new System.Drawing.Point(333, 284);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 39);
+            this.label2.Size = new System.Drawing.Size(101, 39);
             this.label2.TabIndex = 16;
-            this.label2.Text = "EGN:";
+            this.label2.Text = "UCN:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Turquoise;
-            this.label3.Location = new System.Drawing.Point(258, 190);
+            this.label3.Location = new System.Drawing.Point(226, 189);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(780, 42);
+            this.label3.Size = new System.Drawing.Size(829, 42);
             this.label3.TabIndex = 17;
-            this.label3.Text = "WRITE UNIQUE CITIZIEN IDENTIFIER - EGN";
+            this.label3.Text = "WRITE UNIQUE CITIZIEN NUMBER - EGN/UCN";
             // 
             // button6
             // 
@@ -188,6 +188,7 @@
             this.button6.TabIndex = 18;
             this.button6.Text = "OK";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -213,7 +214,7 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.UCNTextBox);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -242,7 +243,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox UCNTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button6;

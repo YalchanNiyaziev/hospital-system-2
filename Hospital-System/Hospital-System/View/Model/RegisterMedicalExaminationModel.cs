@@ -8,6 +8,7 @@ namespace Hospital_System.View.Model
 {
     class RegisterMedicalExaminationModel
     {
+        
         public string PatientName { get; set; }
         public string Ucn { get; set; }
         public string City { get; set; }

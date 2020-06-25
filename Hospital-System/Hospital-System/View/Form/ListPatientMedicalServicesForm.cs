@@ -17,7 +17,7 @@ namespace Hospital_System
     {
         private string UCN;
         private List<PatientMedicalServiceModel> patientMedicalServicesModels;
-        private IMedicalServiceSevice medicalServiceSevice;
+        private IMedicalServiceService medicalServiceSevice;
         public ListPatientMedicalServicesForm(string UCN)
         {
             this.UCN = UCN;

@@ -7,9 +7,8 @@ using Hospital_System.Data.Entity;
 
 namespace Hospital_System.Data.Repository
 {
-    public interface IPatientRepository : IGenericRepository<Patient>
+    public interface IMedicalServiceRepository :IGenericRepository<MedicalService>
     {
-        Patient FindByUcn(string ucn);
+        List<MedicalService> GetAllMedicalRecordsByPatientUcn(string ucn);
     }
-
 }
