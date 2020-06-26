@@ -30,5 +30,13 @@ namespace Hospital_System
         {
            
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HomeForm home =new HomeForm();
+            home.ShowDialog();
+            this.Close();
+        }
     }
 }

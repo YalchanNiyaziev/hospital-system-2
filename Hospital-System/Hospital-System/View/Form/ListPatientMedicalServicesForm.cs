@@ -52,7 +52,38 @@ namespace Hospital_System
                     ErrorLabel.Visible = true;
                 }
         }
-        
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HomeForm home = new HomeForm();
+            home.ShowDialog();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SearchMedRecordForm searchMedRecord = new SearchMedRecordForm();
+            searchMedRecord.ShowDialog();
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListDoctorForm listDoctorForm = new ListDoctorForm();
+            listDoctorForm.ShowDialog();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+
+            this.Close();
+        }
     }
 }

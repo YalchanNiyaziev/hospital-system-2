@@ -37,7 +37,7 @@ namespace Hospital_System
 
                 RegisterMedicalOperationModel medicalOperationModel = CreateModel();
                 medicalServiceService.Save(medicalOperationModel, MedicalServiceType);
-                MessageBox.Show("Successfully recorded medical examination");
+                MessageBox.Show("Successfully recorded medical operation");
                 this.Close();
 
 

@@ -17,10 +17,12 @@ namespace Hospital_System
     {
         private List<SampleExaminationRequestModel> examinationRequestList;
         private IMedicalExaminationRequestService medicalExaminationRequestService;
-        public ListDoctorExaminationRequestForm(int doctorId)
+        private UserModel user;
+        public ListDoctorExaminationRequestForm(UserModel user)
         {
+            this.user = user;
             medicalExaminationRequestService = new MedicalExaminationRequestService();
-            this.examinationRequestList = medicalExaminationRequestService.GetAllPendingRequestByDoctor(doctorId);
+            this.examinationRequestList = medicalExaminationRequestService.GetAllPendingRequestByDoctor(user.Id);
             InitializeComponent();
         }
 
@@ -56,6 +58,27 @@ namespace Hospital_System
             int id = int.Parse(this.dataGridView1.CurrentRow.Cells["Id"].Value.ToString());
             ShowExaminationRequestDetailsForm showExaminationRequestDetailsForm = new ShowExaminationRequestDetailsForm(id);
             showExaminationRequestDetailsForm.ShowDialog();
+            this.Hide();
+            DoctorHomeForm doctorHome = new DoctorHomeForm(user);
+            doctorHome.ShowDialog();
+            this.Close();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DoctorHomeForm doctorHome = new DoctorHomeForm(user);
+            doctorHome.ShowDialog();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HomeForm home = new HomeForm();
+            home.ShowDialog();
+            this.Close();
         }
     }
 }

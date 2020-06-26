@@ -75,6 +75,7 @@
             this.button5.TabIndex = 22;
             this.button5.Text = "LOGOUT";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button1
             // 
@@ -89,6 +90,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "HOME";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 

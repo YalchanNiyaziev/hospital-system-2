@@ -32,12 +32,12 @@ namespace Hospital_System.Service.Implementation
                 model.Doctor = record.Doctor.Name;
                 if (record.MedicalServiceType==MedicalServiceType.Examination)
                 {
-                    model.Description = record.Disease + "\n" + record.MedicalOpinion;
+                    model.Description = record.Disease + " " + record.MedicalOpinion;
                     model.Type = "Medical Examination";
                 }
                 else
                 {
-                    model.Description = record.OperationDescription + "\n" + record.OperationResult;
+                    model.Description = record.OperationDescription + " " + record.OperationResult;
                     model.Type = "Medical Operation";
                 }
                 modelList.Add(model);

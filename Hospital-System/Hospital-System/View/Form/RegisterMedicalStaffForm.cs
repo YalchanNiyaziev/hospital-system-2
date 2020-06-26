@@ -94,6 +94,21 @@ namespace Hospital_System
 
 
         }
-      
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HomeForm home = new HomeForm();
+            home.ShowDialog();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminHomeForm home = new AdminHomeForm();
+            home.ShowDialog();
+            this.Close();
+        }
     }
 }

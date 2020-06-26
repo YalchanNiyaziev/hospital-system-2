@@ -106,5 +106,29 @@ namespace Hospital_System
             }
             return form;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HomeForm home = new HomeForm();
+            home.ShowDialog();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SearchMedRecordForm searchMedRecord = new SearchMedRecordForm();
+            searchMedRecord.ShowDialog();
+            this.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ListDoctorForm listDoctorForm = new ListDoctorForm();
+            listDoctorForm.ShowDialog();
+            this.Close();
+        }
     }
 }
